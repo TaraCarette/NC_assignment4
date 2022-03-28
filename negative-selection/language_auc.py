@@ -1,16 +1,16 @@
 import numpy as np
 from sklearn import metrics
 
-dataFile = "combined.test"
-scoreFile = "scores.txt"
+dataFile = "combined_xhosa.test"
+scoreFile = "scores_xhosa.txt"
 numEng = 123
 
 
 # associate the data with the scores
-with open("combined.test") as f:
+with open(dataFile) as f:
     data = f.read().splitlines()
 
-with open("scores.txt") as f:
+with open(scoreFile) as f:
     scores = f.read().splitlines()
 
 # put all data in list with score and flag is english or not
